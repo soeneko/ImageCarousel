@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Image Carousel</h1>
+    </header>
+
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="img/photo-1.png" class="active" alt="Image 1" />
+        <img src="img/photo-2.png" alt="Image 2" />
+        <img src="img/photo-3.png" alt="Image 3" />
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+      <div class="dots-container">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Designed by Myat Thiri Kyaw, Mya Thet Khin, <br />Thinzar Chan Myae,
+        Khant Zin Soe, Soe Yadanar Htet
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
